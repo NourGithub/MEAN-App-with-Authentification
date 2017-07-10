@@ -1,0 +1,122 @@
+
+<section id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block-left">
+              <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <div class="nav-logo">
+                  <a href="mycontacts.html"><img src="img/logo.png" alt="logo"></a>
+                  </div>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Screenshot</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse --> 
+                </div><!-- /.container-fluid -->
+              </nav>
+                        </div>
+                    </div><!-- .col-md-6 -->
+
+                    <div class="col-md-6">
+                        <div class="block-right">
+                            <div class="contact-area">
+                                <ul>
+                                    <li><i class="fa fa-phone-square"></i>800-123-456</li>
+                                    <li><i class="fa fa-envelope-o"></i>info@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- .col-md-6 close -->
+                </div><!-- .row close -->
+            </div><!-- .container close -->
+        </section><!-- #heder close -->
+
+        
+<div class="container" style="margin: 25px auto; width: 500px">
+      <div ng-show="error" class="alert alert-danger">{{errorMessage}}</div>
+      <div class="row">
+        <div class="main">
+
+          <h3>Please Log In, or <a href="register.html">Sign Up</a></h3>
+          <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <a href="#" class="btn btn-lg btn-primary btn-block">Facebook</a>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <a href="#" class="btn btn-lg btn-info btn-block">Twitter</a>
+            </div>
+          </div>
+          <div class="login-or">
+            <hr class="hr-or">
+            <span class="span-or">or</span>
+          </div>
+
+
+          <form class="form" ng-submit="login()">
+            <div class="form-group">
+              <label for="inputUsernameEmail">Username or email</label>
+              <input type="text" class="form-control" name="username" ng-model="loginForm.username" required>
+            </div>
+            <div class="form-group">
+              <a class="pull-right" href="#">Forgot password?</a>
+              <label for="inputPassword">Password</label>
+             <input type="password" class="form-control" name="password" ng-model="loginForm.password" required>
+            </div>
+            <div class="checkbox pull-right">
+              <label>
+                <input type="checkbox" > Remember me </label>
+
+            </div>
+            
+             <button  type="submit" class="btn btn-default edit-button-1" style="color: red">Login</button>
+
+              <button type="button" class="btn btn-default edit-button-1"><a href="#/register">REGISTER NOW</a></button>
+
+
+          </form>
+          
+           <div class="checkbox pull-right">
+          <h3><a href="#/">Back to home ...</a></h3>
+            
+            </div>
+       
+
+
+      </div>      
+      </div>           
+  </div>
+
+
+<!-- <div class="col-md-4">
+  <h1>Login</h1>
+  <div ng-show="error" class="alert alert-danger">{{errorMessage}}</div>
+  <form class="form" ng-submit="login()">
+    <div class="form-group">
+      <label>Username</label>
+      <input type="text" class="form-control" name="username" ng-model="loginForm.username" required>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+        <input type="password" class="form-control" name="password" ng-model="loginForm.password" required>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-default" ng-disabled="disabled">Login</button>
+      </div>
+  </form>
+</div> -->
